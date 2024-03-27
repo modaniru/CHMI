@@ -32,9 +32,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.NameTb1 = new System.Windows.Forms.TextBox();
+            this.StartTb1 = new System.Windows.Forms.TextBox();
+            this.ValTb1 = new System.Windows.Forms.TextBox();
             this.BackBtn2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -78,29 +78,29 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Введите начальный взнос:";
             // 
-            // textBox1
+            // NameTb1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(175, 53);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(187, 30);
-            this.textBox1.TabIndex = 4;
+            this.NameTb1.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.NameTb1.Location = new System.Drawing.Point(175, 53);
+            this.NameTb1.Name = "NameTb1";
+            this.NameTb1.Size = new System.Drawing.Size(187, 30);
+            this.NameTb1.TabIndex = 4;
             // 
-            // textBox2
+            // StartTb1
             // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(245, 133);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(117, 30);
-            this.textBox2.TabIndex = 5;
+            this.StartTb1.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.StartTb1.Location = new System.Drawing.Point(245, 133);
+            this.StartTb1.Name = "StartTb1";
+            this.StartTb1.Size = new System.Drawing.Size(117, 30);
+            this.StartTb1.TabIndex = 5;
             // 
-            // textBox3
+            // ValTb1
             // 
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.Location = new System.Drawing.Point(245, 93);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(117, 30);
-            this.textBox3.TabIndex = 6;
+            this.ValTb1.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ValTb1.Location = new System.Drawing.Point(245, 93);
+            this.ValTb1.Name = "ValTb1";
+            this.ValTb1.Size = new System.Drawing.Size(117, 30);
+            this.ValTb1.TabIndex = 6;
             // 
             // BackBtn2
             // 
@@ -122,9 +122,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 461);
             this.Controls.Add(this.BackBtn2);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.ValTb1);
+            this.Controls.Add(this.StartTb1);
+            this.Controls.Add(this.NameTb1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -142,9 +142,9 @@
         private Label label2;
         private Label label3;
         private Label label4;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
+        private TextBox NameTb1;
+        private TextBox StartTb1;
+        private TextBox ValTb1;
         private Button BackBtn2;
     }
 }

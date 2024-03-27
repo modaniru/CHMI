@@ -35,7 +35,7 @@
             this.cbCtgry1 = new System.Windows.Forms.ComboBox();
             this.AddBtn1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.SumTb1 = new System.Windows.Forms.TextBox();
             this.dtp1 = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -96,9 +96,9 @@
             // AddBtn1
             // 
             this.AddBtn1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
-            this.AddBtn1.Location = new System.Drawing.Point(142, 204);
+            this.AddBtn1.Location = new System.Drawing.Point(140, 200);
             this.AddBtn1.Name = "AddBtn1";
-            this.AddBtn1.Size = new System.Drawing.Size(131, 51);
+            this.AddBtn1.Size = new System.Drawing.Size(126, 40);
             this.AddBtn1.TabIndex = 4;
             this.AddBtn1.Text = "Добавить";
             this.AddBtn1.UseVisualStyleBackColor = true;
@@ -113,20 +113,21 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Введите сумму (в руб.):";
             // 
-            // textBox1
+            // SumTb1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(184, 153);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(158, 27);
-            this.textBox1.TabIndex = 6;
+            this.SumTb1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.SumTb1.Location = new System.Drawing.Point(184, 153);
+            this.SumTb1.Name = "SumTb1";
+            this.SumTb1.Size = new System.Drawing.Size(175, 27);
+            this.SumTb1.TabIndex = 6;
             // 
             // dtp1
             // 
             this.dtp1.CalendarFont = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.dtp1.Location = new System.Drawing.Point(142, 115);
+            this.dtp1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.dtp1.Location = new System.Drawing.Point(126, 108);
             this.dtp1.Name = "dtp1";
-            this.dtp1.Size = new System.Drawing.Size(200, 23);
+            this.dtp1.Size = new System.Drawing.Size(233, 29);
             this.dtp1.TabIndex = 7;
             // 
             // label3
@@ -146,7 +147,7 @@
             this.ClientSize = new System.Drawing.Size(384, 461);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dtp1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.SumTb1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.AddBtn1);
             this.Controls.Add(this.cbCtgry1);
@@ -168,7 +169,7 @@
         private ComboBox cbCtgry1;
         private Button AddBtn1;
         private Label label2;
-        private TextBox textBox1;
+        private TextBox SumTb1;
         private DateTimePicker dtp1;
         private Label label3;
     }

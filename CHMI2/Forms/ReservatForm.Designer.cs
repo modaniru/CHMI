@@ -35,12 +35,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.ProcTb1 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.WithdrawTb1 = new System.Windows.Forms.TextBox();
+            this.ProcBtn1 = new System.Windows.Forms.Button();
+            this.WthdrBtn2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BackBtn2
@@ -117,13 +117,13 @@
             this.label6.TabIndex = 12;
             this.label6.Text = "Новый процент:";
             // 
-            // textBox1
+            // ProcTb1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(159, 128);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(135, 30);
-            this.textBox1.TabIndex = 13;
+            this.ProcTb1.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ProcTb1.Location = new System.Drawing.Point(159, 128);
+            this.ProcTb1.Name = "ProcTb1";
+            this.ProcTb1.Size = new System.Drawing.Size(135, 30);
+            this.ProcTb1.TabIndex = 13;
             // 
             // label7
             // 
@@ -135,16 +135,6 @@
             this.label7.TabIndex = 14;
             this.label7.Text = "5.5";
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(159, 164);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(135, 34);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Подтвердить";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -155,35 +145,45 @@
             this.label8.TabIndex = 16;
             this.label8.Text = "Вывод на основной счет (руб.):";
             // 
-            // textBox2
+            // WithdrawTb1
             // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(12, 290);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(186, 30);
-            this.textBox2.TabIndex = 17;
+            this.WithdrawTb1.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.WithdrawTb1.Location = new System.Drawing.Point(12, 290);
+            this.WithdrawTb1.Name = "WithdrawTb1";
+            this.WithdrawTb1.Size = new System.Drawing.Size(186, 30);
+            this.WithdrawTb1.TabIndex = 17;
             // 
-            // button2
+            // ProcBtn1
             // 
-            this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(217, 286);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(135, 34);
-            this.button2.TabIndex = 18;
-            this.button2.Text = "Подтвердить";
-            this.button2.UseVisualStyleBackColor = true;
+            this.ProcBtn1.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.ProcBtn1.Location = new System.Drawing.Point(159, 173);
+            this.ProcBtn1.Name = "ProcBtn1";
+            this.ProcBtn1.Size = new System.Drawing.Size(135, 34);
+            this.ProcBtn1.TabIndex = 19;
+            this.ProcBtn1.Text = "Подтвердить";
+            this.ProcBtn1.UseVisualStyleBackColor = true;
+            // 
+            // WthdrBtn2
+            // 
+            this.WthdrBtn2.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.WthdrBtn2.Location = new System.Drawing.Point(226, 286);
+            this.WthdrBtn2.Name = "WthdrBtn2";
+            this.WthdrBtn2.Size = new System.Drawing.Size(126, 34);
+            this.WthdrBtn2.TabIndex = 20;
+            this.WthdrBtn2.Text = "Подтвердить";
+            this.WthdrBtn2.UseVisualStyleBackColor = true;
             // 
             // ReservatForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 461);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.WthdrBtn2);
+            this.Controls.Add(this.ProcBtn1);
+            this.Controls.Add(this.WithdrawTb1);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.ProcTb1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
@@ -208,11 +208,11 @@
         private Label label1;
         private Label label3;
         private Label label6;
-        private TextBox textBox1;
+        private TextBox ProcTb1;
         private Label label7;
-        private Button button1;
         private Label label8;
-        private TextBox textBox2;
-        private Button button2;
+        private TextBox WithdrawTb1;
+        private Button ProcBtn1;
+        private Button WthdrBtn2;
     }
 }

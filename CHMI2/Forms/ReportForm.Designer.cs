@@ -39,14 +39,14 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.BackBtn4 = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
+            this.OutL1 = new System.Windows.Forms.Label();
+            this.ProdL1 = new System.Windows.Forms.Label();
+            this.ClothesL1 = new System.Windows.Forms.Label();
+            this.HealthL1 = new System.Windows.Forms.Label();
+            this.TranspL1 = new System.Windows.Forms.Label();
+            this.FunL1 = new System.Windows.Forms.Label();
+            this.CarL1 = new System.Windows.Forms.Label();
+            this.OtherL1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -177,99 +177,99 @@
             this.BackBtn4.UseVisualStyleBackColor = true;
             this.BackBtn4.Click += new System.EventHandler(this.BackBtn4_Click);
             // 
-            // label10
+            // OutL1
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(226, 50);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(92, 25);
-            this.label10.TabIndex = 10;
-            this.label10.Text = "0 рублей";
+            this.OutL1.AutoSize = true;
+            this.OutL1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.OutL1.Location = new System.Drawing.Point(226, 50);
+            this.OutL1.Name = "OutL1";
+            this.OutL1.Size = new System.Drawing.Size(92, 25);
+            this.OutL1.TabIndex = 10;
+            this.OutL1.Text = "0 рублей";
             // 
-            // label11
+            // ProdL1
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
-            this.label11.Location = new System.Drawing.Point(226, 90);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(92, 25);
-            this.label11.TabIndex = 11;
-            this.label11.Text = "0 рублей";
+            this.ProdL1.AutoSize = true;
+            this.ProdL1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.ProdL1.Location = new System.Drawing.Point(226, 90);
+            this.ProdL1.Name = "ProdL1";
+            this.ProdL1.Size = new System.Drawing.Size(92, 25);
+            this.ProdL1.TabIndex = 11;
+            this.ProdL1.Text = "0 рублей";
             // 
-            // label12
+            // ClothesL1
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
-            this.label12.Location = new System.Drawing.Point(226, 130);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(92, 25);
-            this.label12.TabIndex = 12;
-            this.label12.Text = "0 рублей";
+            this.ClothesL1.AutoSize = true;
+            this.ClothesL1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.ClothesL1.Location = new System.Drawing.Point(226, 130);
+            this.ClothesL1.Name = "ClothesL1";
+            this.ClothesL1.Size = new System.Drawing.Size(92, 25);
+            this.ClothesL1.TabIndex = 12;
+            this.ClothesL1.Text = "0 рублей";
             // 
-            // label13
+            // HealthL1
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
-            this.label13.Location = new System.Drawing.Point(226, 170);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(92, 25);
-            this.label13.TabIndex = 13;
-            this.label13.Text = "0 рублей";
+            this.HealthL1.AutoSize = true;
+            this.HealthL1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.HealthL1.Location = new System.Drawing.Point(226, 170);
+            this.HealthL1.Name = "HealthL1";
+            this.HealthL1.Size = new System.Drawing.Size(92, 25);
+            this.HealthL1.TabIndex = 13;
+            this.HealthL1.Text = "0 рублей";
             // 
-            // label14
+            // TranspL1
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
-            this.label14.Location = new System.Drawing.Point(223, 210);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(92, 25);
-            this.label14.TabIndex = 14;
-            this.label14.Text = "0 рублей";
+            this.TranspL1.AutoSize = true;
+            this.TranspL1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.TranspL1.Location = new System.Drawing.Point(223, 210);
+            this.TranspL1.Name = "TranspL1";
+            this.TranspL1.Size = new System.Drawing.Size(92, 25);
+            this.TranspL1.TabIndex = 14;
+            this.TranspL1.Text = "0 рублей";
             // 
-            // label15
+            // FunL1
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
-            this.label15.Location = new System.Drawing.Point(226, 250);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(92, 25);
-            this.label15.TabIndex = 15;
-            this.label15.Text = "0 рублей";
+            this.FunL1.AutoSize = true;
+            this.FunL1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.FunL1.Location = new System.Drawing.Point(226, 250);
+            this.FunL1.Name = "FunL1";
+            this.FunL1.Size = new System.Drawing.Size(92, 25);
+            this.FunL1.TabIndex = 15;
+            this.FunL1.Text = "0 рублей";
             // 
-            // label16
+            // CarL1
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
-            this.label16.Location = new System.Drawing.Point(226, 290);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(92, 25);
-            this.label16.TabIndex = 16;
-            this.label16.Text = "0 рублей";
+            this.CarL1.AutoSize = true;
+            this.CarL1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.CarL1.Location = new System.Drawing.Point(226, 290);
+            this.CarL1.Name = "CarL1";
+            this.CarL1.Size = new System.Drawing.Size(92, 25);
+            this.CarL1.TabIndex = 16;
+            this.CarL1.Text = "0 рублей";
             // 
-            // label17
+            // OtherL1
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
-            this.label17.Location = new System.Drawing.Point(226, 330);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(92, 25);
-            this.label17.TabIndex = 17;
-            this.label17.Text = "0 рублей";
+            this.OtherL1.AutoSize = true;
+            this.OtherL1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.OtherL1.Location = new System.Drawing.Point(226, 330);
+            this.OtherL1.Name = "OtherL1";
+            this.OtherL1.Size = new System.Drawing.Size(92, 25);
+            this.OtherL1.TabIndex = 17;
+            this.OtherL1.Text = "0 рублей";
             // 
             // ReportForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 461);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
+            this.Controls.Add(this.OtherL1);
+            this.Controls.Add(this.CarL1);
+            this.Controls.Add(this.FunL1);
+            this.Controls.Add(this.TranspL1);
+            this.Controls.Add(this.HealthL1);
+            this.Controls.Add(this.ClothesL1);
+            this.Controls.Add(this.ProdL1);
+            this.Controls.Add(this.OutL1);
             this.Controls.Add(this.BackBtn4);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -299,13 +299,13 @@
         private Label label8;
         private Label label9;
         private Button BackBtn4;
-        private Label label10;
-        private Label label11;
-        private Label label12;
-        private Label label13;
-        private Label label14;
-        private Label label15;
-        private Label label16;
-        private Label label17;
+        private Label OutL1;
+        private Label ProdL1;
+        private Label ClothesL1;
+        private Label HealthL1;
+        private Label TranspL1;
+        private Label FunL1;
+        private Label CarL1;
+        private Label OtherL1;
     }
 }
