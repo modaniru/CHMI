@@ -10,26 +10,21 @@ using System.Windows.Forms;
 
 namespace CHMI2.Forms
 {
-    public partial class ReservatForm : Form
+    public partial class ReportForm : Form
     {
-        public ReservatForm()
+        public ReportForm()
         {
             StartPosition = FormStartPosition.CenterScreen;
             InitializeComponent();
         }
 
-        private void BackBtn2_Click(object sender, EventArgs e)
+        private void BackBtn4_Click(object sender, EventArgs e)
         {
             TransViewForm frm1 = new TransViewForm();
             this.Hide();
             frm1.ShowDialog();
             this.Show();
             this.Close();
-        }
-
-        private void ReservatForm_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

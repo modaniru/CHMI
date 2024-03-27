@@ -26,5 +26,14 @@ namespace CHMI2.Forms
             this.Show();
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            BudgetAddForm frm1 = new BudgetAddForm();
+            this.Hide();
+            frm1.ShowDialog();
+            this.Show();
+            this.Close();
+        }
     }
 }

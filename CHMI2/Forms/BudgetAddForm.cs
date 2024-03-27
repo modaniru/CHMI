@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CHMI2.Forms
 {
-    public partial class ReservatForm : Form
+    public partial class BudgetAddForm : Form
     {
-        public ReservatForm()
+        public BudgetAddForm()
         {
             StartPosition = FormStartPosition.CenterScreen;
             InitializeComponent();
@@ -20,16 +20,11 @@ namespace CHMI2.Forms
 
         private void BackBtn2_Click(object sender, EventArgs e)
         {
-            TransViewForm frm1 = new TransViewForm();
+            PlanningForm frm1 = new PlanningForm();
             this.Hide();
             frm1.ShowDialog();
             this.Show();
             this.Close();
-        }
-
-        private void ReservatForm_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -46,5 +46,14 @@ namespace CHMI2
             this.Show();
             this.Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ReportForm frm1 = new ReportForm();
+            this.Hide();
+            frm1.ShowDialog();
+            this.Show();
+            this.Close();
+        }
     }
 }
