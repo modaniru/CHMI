@@ -19,7 +19,7 @@
             }
             base.Dispose(disposing);
         }
-
+        //smth
         #region Windows Form Designer generated code
 
         /// <summary>
