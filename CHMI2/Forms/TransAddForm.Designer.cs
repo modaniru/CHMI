@@ -34,10 +34,10 @@
             this.cbTrType1 = new System.Windows.Forms.ComboBox();
             this.cbCtgry1 = new System.Windows.Forms.ComboBox();
             this.AddBtn1 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.SumTb1 = new System.Windows.Forms.TextBox();
             this.dtp1 = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // BackBtn3
@@ -103,16 +103,6 @@
             this.AddBtn1.Text = "Добавить";
             this.AddBtn1.UseVisualStyleBackColor = true;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(12, 158);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(155, 17);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Введите сумму (в руб.):";
-            // 
             // SumTb1
             // 
             this.SumTb1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -140,15 +130,25 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "Укажите дату:";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(3, 156);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(163, 20);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Введите сумму (руб.):";
+            // 
             // TransAddForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 461);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dtp1);
             this.Controls.Add(this.SumTb1);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.AddBtn1);
             this.Controls.Add(this.cbCtgry1);
             this.Controls.Add(this.cbTrType1);
@@ -168,9 +168,9 @@
         private ComboBox cbTrType1;
         private ComboBox cbCtgry1;
         private Button AddBtn1;
-        private Label label2;
         private TextBox SumTb1;
         private DateTimePicker dtp1;
         private Label label3;
+        private Label label4;
     }
 }

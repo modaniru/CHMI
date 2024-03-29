@@ -148,9 +148,9 @@
             // WithdrawTb1
             // 
             this.WithdrawTb1.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.WithdrawTb1.Location = new System.Drawing.Point(12, 290);
+            this.WithdrawTb1.Location = new System.Drawing.Point(12, 286);
             this.WithdrawTb1.Name = "WithdrawTb1";
-            this.WithdrawTb1.Size = new System.Drawing.Size(186, 30);
+            this.WithdrawTb1.Size = new System.Drawing.Size(198, 30);
             this.WithdrawTb1.TabIndex = 17;
             // 
             // ProcBtn1
