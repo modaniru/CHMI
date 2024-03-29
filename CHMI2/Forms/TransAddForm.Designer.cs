@@ -35,9 +35,12 @@
             this.cbCtgry1 = new System.Windows.Forms.ComboBox();
             this.AddBtn1 = new System.Windows.Forms.Button();
             this.SumTb1 = new System.Windows.Forms.TextBox();
-            this.dtp1 = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.dtp1 = new System.Windows.Forms.DateTimePicker();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tbName1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // BackBtn3
@@ -57,7 +60,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 66);
+            this.label1.Location = new System.Drawing.Point(14, 111);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 15);
             this.label1.TabIndex = 1;
@@ -69,7 +72,7 @@
             this.cbTrType1.Items.AddRange(new object[] {
             "Доход",
             "Расход"});
-            this.cbTrType1.Location = new System.Drawing.Point(12, 28);
+            this.cbTrType1.Location = new System.Drawing.Point(14, 73);
             this.cbTrType1.Name = "cbTrType1";
             this.cbTrType1.Size = new System.Drawing.Size(217, 28);
             this.cbTrType1.TabIndex = 2;
@@ -87,7 +90,7 @@
             "Равзлечения",
             "Автоуслуги",
             "Другое"});
-            this.cbCtgry1.Location = new System.Drawing.Point(12, 66);
+            this.cbCtgry1.Location = new System.Drawing.Point(14, 111);
             this.cbCtgry1.Name = "cbCtgry1";
             this.cbCtgry1.Size = new System.Drawing.Size(217, 28);
             this.cbCtgry1.TabIndex = 3;
@@ -96,35 +99,27 @@
             // AddBtn1
             // 
             this.AddBtn1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
-            this.AddBtn1.Location = new System.Drawing.Point(140, 200);
+            this.AddBtn1.Location = new System.Drawing.Point(142, 245);
             this.AddBtn1.Name = "AddBtn1";
             this.AddBtn1.Size = new System.Drawing.Size(126, 40);
             this.AddBtn1.TabIndex = 4;
             this.AddBtn1.Text = "Добавить";
             this.AddBtn1.UseVisualStyleBackColor = true;
+            this.AddBtn1.Click += new System.EventHandler(this.AddBtn1_Click);
             // 
             // SumTb1
             // 
             this.SumTb1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.SumTb1.Location = new System.Drawing.Point(184, 153);
+            this.SumTb1.Location = new System.Drawing.Point(186, 198);
             this.SumTb1.Name = "SumTb1";
             this.SumTb1.Size = new System.Drawing.Size(175, 27);
             this.SumTb1.TabIndex = 6;
-            // 
-            // dtp1
-            // 
-            this.dtp1.CalendarFont = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.dtp1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.dtp1.Location = new System.Drawing.Point(126, 108);
-            this.dtp1.Name = "dtp1";
-            this.dtp1.Size = new System.Drawing.Size(233, 29);
-            this.dtp1.TabIndex = 7;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(12, 115);
+            this.label3.Location = new System.Drawing.Point(14, 160);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(108, 20);
             this.label3.TabIndex = 8;
@@ -134,20 +129,59 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(3, 156);
+            this.label4.Location = new System.Drawing.Point(5, 201);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(163, 20);
             this.label4.TabIndex = 9;
             this.label4.Text = "Введите сумму (руб.):";
+            // 
+            // dtp1
+            // 
+            this.dtp1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.dtp1.Location = new System.Drawing.Point(142, 160);
+            this.dtp1.Name = "dtp1";
+            this.dtp1.Size = new System.Drawing.Size(200, 27);
+            this.dtp1.TabIndex = 10;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(90, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(195, 21);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Добавление транзакции";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(14, 43);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(81, 20);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Название:";
+            // 
+            // tbName1
+            // 
+            this.tbName1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.tbName1.Location = new System.Drawing.Point(101, 40);
+            this.tbName1.Name = "tbName1";
+            this.tbName1.Size = new System.Drawing.Size(260, 27);
+            this.tbName1.TabIndex = 13;
             // 
             // TransAddForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 461);
+            this.Controls.Add(this.tbName1);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.dtp1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.dtp1);
             this.Controls.Add(this.SumTb1);
             this.Controls.Add(this.AddBtn1);
             this.Controls.Add(this.cbCtgry1);
@@ -169,8 +203,11 @@
         private ComboBox cbCtgry1;
         private Button AddBtn1;
         private TextBox SumTb1;
-        private DateTimePicker dtp1;
         private Label label3;
         private Label label4;
+        private DateTimePicker dtp1;
+        private Label label2;
+        private Label label5;
+        private TextBox tbName1;
     }
 }
