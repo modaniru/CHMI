@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TransViewForm));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.PlanBtn1 = new System.Windows.Forms.Button();
             this.ReservBtn1 = new System.Windows.Forms.Button();
@@ -45,10 +47,12 @@
             this.TrVal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.walletBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.transactionBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.walletBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.walletBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.transactionBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.walletBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -140,6 +144,15 @@
             this.dgv1.AllowUserToAddRows = false;
             this.dgv1.AllowUserToDeleteRows = false;
             this.dgv1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgv1.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.TrType,
@@ -147,6 +160,14 @@
             this.TrName,
             this.TrDate,
             this.TrVal});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgv1.Location = new System.Drawing.Point(15, 52);
             this.dgv1.Name = "dgv1";
             this.dgv1.ReadOnly = true;
@@ -161,35 +182,35 @@
             this.TrType.HeaderText = "Тип";
             this.TrType.Name = "TrType";
             this.TrType.ReadOnly = true;
-            this.TrType.Width = 52;
+            this.TrType.Width = 59;
             // 
             // TbCat
             // 
             this.TbCat.HeaderText = "Категория";
             this.TbCat.Name = "TbCat";
             this.TbCat.ReadOnly = true;
-            this.TbCat.Width = 88;
+            this.TbCat.Width = 106;
             // 
             // TrName
             // 
             this.TrName.HeaderText = "Название";
             this.TrName.Name = "TrName";
             this.TrName.ReadOnly = true;
-            this.TrName.Width = 84;
+            this.TrName.Width = 102;
             // 
             // TrDate
             // 
             this.TrDate.HeaderText = "Дата";
             this.TrDate.Name = "TrDate";
             this.TrDate.ReadOnly = true;
-            this.TrDate.Width = 57;
+            this.TrDate.Width = 67;
             // 
             // TrVal
             // 
             this.TrVal.HeaderText = "Размер";
             this.TrVal.Name = "TrVal";
             this.TrVal.ReadOnly = true;
-            this.TrVal.Width = 72;
+            this.TrVal.Width = 86;
             // 
             // walletBindingSource
             // 
@@ -198,6 +219,10 @@
             // transactionBindingSource
             // 
             this.transactionBindingSource.DataSource = typeof(CHMI2.Transaction);
+            // 
+            // walletBindingSource1
+            // 
+            this.walletBindingSource1.DataSource = typeof(CHMI2.Wallet);
             // 
             // TransViewForm
             // 
@@ -216,6 +241,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgv1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.walletBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.transactionBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.walletBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -238,5 +264,6 @@
         private BindingSource walletBindingSource;
         private BindingSource transactionBindingSource;
         private DataGridView dgv1;
+        private BindingSource walletBindingSource1;
     }
 }

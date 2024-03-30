@@ -1,4 +1,5 @@
 using CHMI2.Forms;
+using System.Transactions;
 using System.Windows.Forms;
 //using static CHMI2.Forms.TransAddForm;
 
@@ -15,30 +16,22 @@ namespace CHMI2
         public TransViewForm()
         {
             StartPosition = FormStartPosition.CenterScreen;
-           // int c = dgv1.ColumnCount;
+            InitializeComponent();
+            // int c = dgv1.ColumnCount;
             int count = wallet.GetCount();
             List<Transaction> transaction = wallet.GetList();
-            if (count != 0) {
-                //dgv1.DataSource = transaction;
-                dgv1["TrType",0].Value = transaction[0].type;
-                dgv1[0, 1].Value = transaction[0].category;
-                dgv1[0, 2].Value = transaction[0].name;
-                dgv1[0, 3].Value = transaction[0].date;
-                dgv1[0, 4].Value = transaction[0].value;
-                //    List<Transaction> transaction = wallet.transactions;
+            //dgv1.RowCount = count;
+            
+            if (count != 0)
+            {
 
-
-                //    //dgv1.Rows[0].Cells[0].Value = transaction[0].type;
-                //    //for (int i =0; i < transaction.Count; i++)
-                //    //{
-                //    //    for (int j = 0; j < 4; j++)
-                //    //    {
-                //    //        dgv1.Rows[i].Cells[j].Value = transaction[i].type;
-                //    //    }
-                //    //}
+                foreach (Transaction trans in transaction)
+                {
+                    dgv1.Rows.Add(trans.type, trans.category, trans.name,  trans.date, trans.value);
+                }
             }
             //dgv1.DataSource = transaction;
-            InitializeComponent();
+
         }
 
 
