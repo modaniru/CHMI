@@ -46,9 +46,34 @@ namespace CHMI2.Forms
                 tbName1.Clear();
                 dtp1.Value = DateTime.Today;
                 SumTb1.Clear();
+
+                TransViewForm frm1 = new TransViewForm();
+                this.Hide();
+                frm1.ShowDialog();
+                this.Show();
+                this.Close();
             }
 
  
         }
+
+        private void cbTrType1_TextUpdate(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbTrType1_DropDownClosed(object sender, EventArgs e)
+        {
+            if (cbTrType1.Text == "Доход")
+            {
+                cbCtgry1.Items.Add("Доход");
+            }
+            else
+            {
+                string[] cats = { "Продукты питания", "Одежда и обувь", "Здоровье", "Транспорт", "Равзлечения", "Автоуслуги", "Другое" };
+                cbCtgry1.Items.AddRange(cats);
+            }
+        }
+
     }
 }

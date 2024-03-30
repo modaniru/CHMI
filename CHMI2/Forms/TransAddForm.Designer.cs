@@ -79,20 +79,14 @@
             this.cbTrType1.Name = "cbTrType1";
             this.cbTrType1.Size = new System.Drawing.Size(145, 28);
             this.cbTrType1.TabIndex = 2;
+            this.cbTrType1.TextUpdate += new System.EventHandler(this.cbTrType1_TextUpdate);
+            this.cbTrType1.DropDownClosed += new System.EventHandler(this.cbTrType1_DropDownClosed);
             // 
             // cbCtgry1
             // 
             this.cbCtgry1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCtgry1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.cbCtgry1.FormattingEnabled = true;
-            this.cbCtgry1.Items.AddRange(new object[] {
-            "Продукты питания",
-            "Одежда и обувь",
-            "Здоровье",
-            "Транспорт",
-            "Равзлечения",
-            "Автоуслуги",
-            "Другое"});
             this.cbCtgry1.Location = new System.Drawing.Point(182, 111);
             this.cbCtgry1.Name = "cbCtgry1";
             this.cbCtgry1.Size = new System.Drawing.Size(179, 28);

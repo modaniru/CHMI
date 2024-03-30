@@ -28,15 +28,16 @@ namespace CHMI2
 
         public int GetBalance()
         {
+            int bal = 0;
             foreach (Transaction trans in transactions) {
                 if (trans.type == "Доход")
                 {
-                    Balance += trans.value;
+                    bal += trans.value;
                 }
-                else Balance -= trans.value;
+                else bal -= trans.value;
 
             }
-            return Balance;
+            return bal;
         }
 
         public int GetCount()
@@ -56,7 +57,7 @@ namespace CHMI2
             transactions.Add(trans);
         }
 
-
+ 
     }
 
 
