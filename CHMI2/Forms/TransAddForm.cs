@@ -34,20 +34,19 @@ namespace CHMI2.Forms
 
         private void AddBtn1_Click(object sender, EventArgs e)
         {
-            int Val = Convert.ToInt32(SumTb1.Text);
+            
+            if (cbTrType1.Text != "" && tbName1.Text != "" && cbCtgry1.Text != "" && dtp1.Text != "")
+            {
+                int Val = Convert.ToInt32(SumTb1.Text);
+                Transaction trans = new Transaction(cbTrType1.Text, tbName1.Text, cbCtgry1.Text, dtp1.Text, Val);
+                TransViewForm.wallet.AddTransaction(trans);
 
-            Transaction trans = new Transaction(cbTrType1.Text, tbName1.Text, cbCtgry1.Text, dtp1.Text, Val);
-            TransViewForm.wallet.AddTransaction(trans);
-
-
-           // TransViewForm.wallet.AddTransaction(cbTrType1.Text, tbName1.Text, cbCtgry1.Text, dtp1.Text, Val);
-
-            cbTrType1.Text = "";
-            tbName1.Clear();
-            cbCtgry1.Text = "";
-            dtp1.Value = DateTime.Today;
-            SumTb1.Clear();
-
+                cbCtgry1.SelectedIndex = -1;
+                cbTrType1.SelectedIndex = -1;
+                tbName1.Clear();
+                dtp1.Value = DateTime.Today;
+                SumTb1.Clear();
+            }
 
  
         }

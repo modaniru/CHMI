@@ -17,11 +17,29 @@ namespace CHMI2
         {
             StartPosition = FormStartPosition.CenterScreen;
             InitializeComponent();
-            // int c = dgv1.ColumnCount;
+
             int count = wallet.GetCount();
             List<Transaction> transaction = wallet.GetList();
-            //dgv1.RowCount = count;
             
+            dgv1.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9);
+            dgv1.DefaultCellStyle.Font = new Font("Tahoma", 9);
+
+            //Добавление 3х транзакций для удобства работы
+            if (count == 0)
+            {
+                Transaction trans1 = new("Доход", "Зачисление стипендии", "", "25 марта 2024 г.", 10000);
+                Transaction trans2 = new("Расход", "Покупка продуктов", "Продукты питания", "30 марта 2024 г.", 1500);
+                Transaction trans3 = new("Расход", "Покупка обуви", "Одежда и обувь", "31 марта 2024 г.", 5500);
+                wallet.AddTransaction(trans1);
+                wallet.AddTransaction(trans2);  
+                wallet.AddTransaction(trans3);
+
+                foreach (Transaction trans in transaction)
+                {
+                    dgv1.Rows.Add(trans.type, trans.category, trans.name, trans.date, trans.value);
+                }
+            }
+
             if (count != 0)
             {
 
@@ -30,7 +48,8 @@ namespace CHMI2
                     dgv1.Rows.Add(trans.type, trans.category, trans.name,  trans.date, trans.value);
                 }
             }
-            //dgv1.DataSource = transaction;
+
+            BalanceLabel1.Text = wallet.GetBalance().ToString();
 
         }
 

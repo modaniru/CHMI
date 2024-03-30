@@ -41,6 +41,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.tbName1 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // BackBtn3
@@ -67,19 +69,20 @@
             // 
             // cbTrType1
             // 
+            this.cbTrType1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTrType1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.cbTrType1.FormattingEnabled = true;
             this.cbTrType1.Items.AddRange(new object[] {
             "Доход",
             "Расход"});
-            this.cbTrType1.Location = new System.Drawing.Point(14, 73);
+            this.cbTrType1.Location = new System.Drawing.Point(216, 73);
             this.cbTrType1.Name = "cbTrType1";
-            this.cbTrType1.Size = new System.Drawing.Size(217, 28);
+            this.cbTrType1.Size = new System.Drawing.Size(145, 28);
             this.cbTrType1.TabIndex = 2;
-            this.cbTrType1.Text = "Выберите тип транзакции";
             // 
             // cbCtgry1
             // 
+            this.cbCtgry1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCtgry1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.cbCtgry1.FormattingEnabled = true;
             this.cbCtgry1.Items.AddRange(new object[] {
@@ -90,11 +93,10 @@
             "Равзлечения",
             "Автоуслуги",
             "Другое"});
-            this.cbCtgry1.Location = new System.Drawing.Point(14, 111);
+            this.cbCtgry1.Location = new System.Drawing.Point(182, 111);
             this.cbCtgry1.Name = "cbCtgry1";
-            this.cbCtgry1.Size = new System.Drawing.Size(217, 28);
+            this.cbCtgry1.Size = new System.Drawing.Size(179, 28);
             this.cbCtgry1.TabIndex = 3;
-            this.cbCtgry1.Text = "Выберите категорию";
             // 
             // AddBtn1
             // 
@@ -110,7 +112,7 @@
             // SumTb1
             // 
             this.SumTb1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.SumTb1.Location = new System.Drawing.Point(186, 198);
+            this.SumTb1.Location = new System.Drawing.Point(186, 194);
             this.SumTb1.Name = "SumTb1";
             this.SumTb1.Size = new System.Drawing.Size(175, 27);
             this.SumTb1.TabIndex = 6;
@@ -138,9 +140,9 @@
             // dtp1
             // 
             this.dtp1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.dtp1.Location = new System.Drawing.Point(142, 160);
+            this.dtp1.Location = new System.Drawing.Point(182, 153);
             this.dtp1.Name = "dtp1";
-            this.dtp1.Size = new System.Drawing.Size(200, 27);
+            this.dtp1.Size = new System.Drawing.Size(179, 27);
             this.dtp1.TabIndex = 10;
             // 
             // label2
@@ -171,11 +173,33 @@
             this.tbName1.Size = new System.Drawing.Size(260, 27);
             this.tbName1.TabIndex = 13;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(14, 76);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(196, 20);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Выберите тип транзакции:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(14, 114);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(162, 20);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "Выберите категорию:";
+            // 
             // TransAddForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 461);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.tbName1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
@@ -209,5 +233,7 @@
         private Label label2;
         private Label label5;
         private TextBox tbName1;
+        private Label label6;
+        private Label label7;
     }
 }

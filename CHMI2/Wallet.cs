@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Common;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,6 +28,14 @@ namespace CHMI2
 
         public int GetBalance()
         {
+            foreach (Transaction trans in transactions) {
+                if (trans.type == "Доход")
+                {
+                    Balance += trans.value;
+                }
+                else Balance -= trans.value;
+
+            }
             return Balance;
         }
 
@@ -40,18 +49,14 @@ namespace CHMI2
             return transactions;
         }
 
-        //public void AddTransaction(string Type, string Name, string Category, string Date, int Value)
-        //{
-        //    Transaction trans = new(Type, Name, Category, Date, Value);
-        //    transactions.Add(trans);
-        //}
 
         public void AddTransaction(Transaction trans)
         {
             //Transaction trans = new(Type, Name, Category, Date, Value);
             transactions.Add(trans);
         }
-        //~Wallet() { }
+
+
     }
 
 
