@@ -7,11 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using CHMI2.WalletModels;
 
 namespace CHMI2.Forms
 {
-    
+
 
     public partial class TransAddForm : Form
     {
@@ -44,7 +44,7 @@ namespace CHMI2.Forms
 
                 if (trans.type == "Доход")
                 {
-                    Transaction res = new Transaction("Копилка", " ", "Пополнение", " ", Val / 100 * TransViewForm.wallet.GetReservedProcent());
+                    Transaction res = new Transaction("Копилка", " ", "Пополнение", "", Val / 100 * TransViewForm.wallet.GetReservedProcent());
                     TransViewForm.wallet.AddTransaction(res);
                 }
 

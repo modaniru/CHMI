@@ -1,4 +1,6 @@
-﻿namespace CHMI2
+﻿using CHMI2.WalletModels;
+
+namespace CHMI2
 {
     partial class TransViewForm
     {
@@ -215,15 +217,15 @@
             // 
             // walletBindingSource
             // 
-            this.walletBindingSource.DataSource = typeof(CHMI2.Wallet);
+            this.walletBindingSource.DataSource = typeof(Wallet);
             // 
             // transactionBindingSource
             // 
-            this.transactionBindingSource.DataSource = typeof(CHMI2.Transaction);
+            this.transactionBindingSource.DataSource = typeof(Transaction);
             // 
             // walletBindingSource1
             // 
-            this.walletBindingSource1.DataSource = typeof(CHMI2.Wallet);
+            this.walletBindingSource1.DataSource = typeof(Wallet);
             // 
             // TransViewForm
             // 

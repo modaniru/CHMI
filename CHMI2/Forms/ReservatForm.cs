@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CHMI2.WalletModels;
 
 namespace CHMI2.Forms
 {

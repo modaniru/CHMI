@@ -36,6 +36,7 @@
             this.StartTb1 = new System.Windows.Forms.TextBox();
             this.ValTb1 = new System.Windows.Forms.TextBox();
             this.BackBtn2 = new System.Windows.Forms.Button();
+            this.BtnAdd1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -116,11 +117,23 @@
             this.BackBtn2.UseVisualStyleBackColor = true;
             this.BackBtn2.Click += new System.EventHandler(this.BackBtn2_Click);
             // 
+            // BtnAdd1
+            // 
+            this.BtnAdd1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnAdd1.Location = new System.Drawing.Point(122, 179);
+            this.BtnAdd1.Name = "BtnAdd1";
+            this.BtnAdd1.Size = new System.Drawing.Size(135, 39);
+            this.BtnAdd1.TabIndex = 8;
+            this.BtnAdd1.Text = " Создать";
+            this.BtnAdd1.UseVisualStyleBackColor = true;
+            this.BtnAdd1.Click += new System.EventHandler(this.BtnAdd1_Click);
+            // 
             // BudgetAddForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 461);
+            this.Controls.Add(this.BtnAdd1);
             this.Controls.Add(this.BackBtn2);
             this.Controls.Add(this.ValTb1);
             this.Controls.Add(this.StartTb1);
@@ -146,5 +159,6 @@
         private TextBox StartTb1;
         private TextBox ValTb1;
         private Button BackBtn2;
+        private Button BtnAdd1;
     }
 }

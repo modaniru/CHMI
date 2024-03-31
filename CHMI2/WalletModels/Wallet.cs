@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using System.Transactions;
 using System.Windows.Forms.VisualStyles;
 
-namespace CHMI2
+namespace CHMI2.WalletModels
 {
     public class Wallet
     {
@@ -23,11 +23,20 @@ namespace CHMI2
         }
 
 
-       
+
 
         public void SetBalance(int balance)
         {
             Balance = balance;
+        }
+
+        public void DownBalance(int balance)
+        {
+            Balance -= balance;
+        }
+        public void UpBalance(int balance)
+        {
+            Balance += balance;
         }
 
         public int GetBalance()
@@ -44,6 +53,7 @@ namespace CHMI2
             //return bal;
             return Balance;
         }
+
 
         public void SetReservedProcent(int proc)
         {
@@ -80,7 +90,7 @@ namespace CHMI2
             {
                 int tmp = trans.value;
                 ReservedBalance += tmp / 100 * ReservedProcent;
-            
+
                 trans.value -= tmp / 100 * ReservedProcent;
             }
 

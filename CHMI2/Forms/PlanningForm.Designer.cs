@@ -40,8 +40,9 @@
             this.WthdrwBtn1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.LabelPlan = new System.Windows.Forms.Label();
+            this.LabelBal = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // BackBtn4
@@ -62,7 +63,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(12, 18);
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(114, 30);
             this.label1.TabIndex = 1;
@@ -81,18 +82,19 @@
             // 
             // BudgetCb1
             // 
+            this.BudgetCb1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.BudgetCb1.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BudgetCb1.FormattingEnabled = true;
-            this.BudgetCb1.Location = new System.Drawing.Point(12, 70);
+            this.BudgetCb1.Location = new System.Drawing.Point(12, 98);
             this.BudgetCb1.Name = "BudgetCb1";
             this.BudgetCb1.Size = new System.Drawing.Size(335, 31);
             this.BudgetCb1.TabIndex = 3;
-            this.BudgetCb1.Text = "Выберите цель:";
+            this.BudgetCb1.TextChanged += new System.EventHandler(this.BudgetCb1_TextChanged);
             // 
             // DepTb1
             // 
             this.DepTb1.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.DepTb1.Location = new System.Drawing.Point(200, 210);
+            this.DepTb1.Location = new System.Drawing.Point(200, 227);
             this.DepTb1.Name = "DepTb1";
             this.DepTb1.Size = new System.Drawing.Size(147, 30);
             this.DepTb1.TabIndex = 5;
@@ -100,18 +102,19 @@
             // DepBtn1
             // 
             this.DepBtn1.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
-            this.DepBtn1.Location = new System.Drawing.Point(126, 246);
+            this.DepBtn1.Location = new System.Drawing.Point(126, 263);
             this.DepBtn1.Name = "DepBtn1";
             this.DepBtn1.Size = new System.Drawing.Size(126, 34);
             this.DepBtn1.TabIndex = 6;
             this.DepBtn1.Text = "Подтвердить";
             this.DepBtn1.UseVisualStyleBackColor = true;
+            this.DepBtn1.Click += new System.EventHandler(this.DepBtn1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(12, 213);
+            this.label2.Location = new System.Drawing.Point(12, 230);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(182, 23);
             this.label2.TabIndex = 4;
@@ -144,12 +147,13 @@
             this.WthdrwBtn1.TabIndex = 9;
             this.WthdrwBtn1.Text = "Подтвердить";
             this.WthdrwBtn1.UseVisualStyleBackColor = true;
+            this.WthdrwBtn1.Click += new System.EventHandler(this.WthdrwBtn1_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(12, 116);
+            this.label4.Location = new System.Drawing.Point(12, 147);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(199, 23);
             this.label4.TabIndex = 10;
@@ -159,39 +163,50 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(106, 157);
+            this.label5.Location = new System.Drawing.Point(106, 188);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(105, 23);
             this.label5.TabIndex = 11;
             this.label5.Text = "Цель (руб.):";
             // 
+            // LabelPlan
+            // 
+            this.LabelPlan.AutoSize = true;
+            this.LabelPlan.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LabelPlan.Location = new System.Drawing.Point(217, 188);
+            this.LabelPlan.Name = "LabelPlan";
+            this.LabelPlan.Size = new System.Drawing.Size(53, 23);
+            this.LabelPlan.TabIndex = 12;
+            this.LabelPlan.Text = "10000";
+            // 
+            // LabelBal
+            // 
+            this.LabelBal.AutoSize = true;
+            this.LabelBal.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LabelBal.Location = new System.Drawing.Point(217, 147);
+            this.LabelBal.Name = "LabelBal";
+            this.LabelBal.Size = new System.Drawing.Size(35, 23);
+            this.LabelBal.TabIndex = 13;
+            this.LabelBal.Text = "100";
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(217, 157);
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(12, 65);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(53, 23);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "10000";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(217, 116);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 23);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "100";
+            this.label6.Size = new System.Drawing.Size(169, 30);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Выберите цель:";
             // 
             // PlanningForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 461);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
+            this.Controls.Add(this.LabelBal);
+            this.Controls.Add(this.LabelPlan);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.WthdrwBtn1);
@@ -225,7 +240,8 @@
         private Button WthdrwBtn1;
         private Label label4;
         private Label label5;
+        private Label LabelPlan;
+        private Label LabelBal;
         private Label label6;
-        private Label label7;
     }
 }
