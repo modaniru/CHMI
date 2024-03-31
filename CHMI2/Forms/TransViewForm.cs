@@ -28,9 +28,15 @@ namespace CHMI2
             if (count == 0)
             {
                 Transaction trans1 = new("Доход", "Зачисление стипендии", "Доход", "25 марта 2024 г.", 10000);
+                Transaction res = new Transaction("Копилка", " ", "Пополнение", " ", trans1.value / 100 * TransViewForm.wallet.GetReservedProcent());
+   
                 Transaction trans2 = new("Расход", "Покупка продуктов", "Продукты питания", "30 марта 2024 г.", 1500);
                 Transaction trans3 = new("Расход", "Покупка обуви", "Одежда и обувь", "31 марта 2024 г.", 5500);
+
+
+                    
                 wallet.AddTransaction(trans1);
+                wallet.AddTransaction(res);
                 wallet.AddTransaction(trans2);
                 wallet.AddTransaction(trans3);
 

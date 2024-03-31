@@ -31,12 +31,12 @@
             this.BackBtn2 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.ResBal = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.ProcTb1 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.ResProc = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.WithdrawTb1 = new System.Windows.Forms.TextBox();
             this.ProcBtn1 = new System.Windows.Forms.Button();
@@ -77,15 +77,15 @@
             this.label2.TabIndex = 8;
             this.label2.Text = "Отложенный бюджет (руб.):";
             // 
-            // label5
+            // ResBal
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(255, 52);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(97, 23);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "100.000.000";
+            this.ResBal.AutoSize = true;
+            this.ResBal.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ResBal.Location = new System.Drawing.Point(255, 52);
+            this.ResBal.Name = "ResBal";
+            this.ResBal.Size = new System.Drawing.Size(97, 23);
+            this.ResBal.TabIndex = 9;
+            this.ResBal.Text = "100.000.000";
             // 
             // label1
             // 
@@ -125,15 +125,15 @@
             this.ProcTb1.Size = new System.Drawing.Size(135, 30);
             this.ProcTb1.TabIndex = 13;
             // 
-            // label7
+            // ResProc
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(217, 89);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(32, 23);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "5.5";
+            this.ResProc.AutoSize = true;
+            this.ResProc.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ResProc.Location = new System.Drawing.Point(217, 89);
+            this.ResProc.Name = "ResProc";
+            this.ResProc.Size = new System.Drawing.Size(32, 23);
+            this.ResProc.TabIndex = 14;
+            this.ResProc.Text = "5.5";
             // 
             // label8
             // 
@@ -162,6 +162,7 @@
             this.ProcBtn1.TabIndex = 19;
             this.ProcBtn1.Text = "Подтвердить";
             this.ProcBtn1.UseVisualStyleBackColor = true;
+            this.ProcBtn1.Click += new System.EventHandler(this.ProcBtn1_Click);
             // 
             // WthdrBtn2
             // 
@@ -172,6 +173,7 @@
             this.WthdrBtn2.TabIndex = 20;
             this.WthdrBtn2.Text = "Подтвердить";
             this.WthdrBtn2.UseVisualStyleBackColor = true;
+            this.WthdrBtn2.Click += new System.EventHandler(this.WthdrBtn2_Click);
             // 
             // ReservatForm
             // 
@@ -182,12 +184,12 @@
             this.Controls.Add(this.ProcBtn1);
             this.Controls.Add(this.WithdrawTb1);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.ResProc);
             this.Controls.Add(this.ProcTb1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.ResBal);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.BackBtn2);
@@ -204,12 +206,12 @@
         private Button BackBtn2;
         private Label label4;
         private Label label2;
-        private Label label5;
+        private Label ResBal;
         private Label label1;
         private Label label3;
         private Label label6;
         private TextBox ProcTb1;
-        private Label label7;
+        private Label ResProc;
         private Label label8;
         private TextBox WithdrawTb1;
         private Button ProcBtn1;

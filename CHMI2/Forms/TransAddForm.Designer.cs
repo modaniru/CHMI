@@ -79,8 +79,10 @@
             this.cbTrType1.Name = "cbTrType1";
             this.cbTrType1.Size = new System.Drawing.Size(145, 28);
             this.cbTrType1.TabIndex = 2;
+            this.cbTrType1.DropDown += new System.EventHandler(this.cbTrType1_DropDown);
             this.cbTrType1.TextUpdate += new System.EventHandler(this.cbTrType1_TextUpdate);
             this.cbTrType1.DropDownClosed += new System.EventHandler(this.cbTrType1_DropDownClosed);
+            this.cbTrType1.TextChanged += new System.EventHandler(this.cbTrType1_TextChanged);
             // 
             // cbCtgry1
             // 

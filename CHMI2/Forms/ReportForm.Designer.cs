@@ -224,7 +224,7 @@
             // 
             this.TranspL1.AutoSize = true;
             this.TranspL1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
-            this.TranspL1.Location = new System.Drawing.Point(223, 250);
+            this.TranspL1.Location = new System.Drawing.Point(226, 250);
             this.TranspL1.Name = "TranspL1";
             this.TranspL1.Size = new System.Drawing.Size(92, 25);
             this.TranspL1.TabIndex = 14;

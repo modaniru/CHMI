@@ -21,7 +21,9 @@ namespace CHMI2
         public ReportMake(Wallet wallet)
         {
             foreach (Transaction trans in wallet.transactions)
-            {
+            {  
+                //if( trans.type == "Копилка") break;
+
                 if (trans.category == "Продукты питания")
                 {
                     products+=trans.value;
